@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가상선택자4</title>
+    <style>
+/* 유일하게 하나듸 타입만 선택해준다. 
+        띄어쓰기유무에 따라 선택되는게 다르다.       */
+        span :only-of-type{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <span>
+        <div>난 div 태그의 첫번째야</div>
+        <P>난 유일한 p 태그야</P>
+        <div>난 div 태그의 두번째야</div>
+        <div>난 div 태그의 세번째야
+            <i>난 유일한 i태그야</i>
+            <em>난 em 태그의 첫 번째야</em>
+            <em>난 em 태그의 두 번째야</em>
+        </div>
+    </span>
+</body>
+<p><a href="index.html"><img src="/img/home.png" alt="그림없니?"></a></p>
+</html>

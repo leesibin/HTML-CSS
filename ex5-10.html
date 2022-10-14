@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>이동</title>
+    <style>
+        div{
+             width: 150px;
+            height: 150px;
+           
+        }
+        .contanier div{
+            border: 5px solid tomato;
+            margin: 50px;
+        }
+         
+        .contanier div{
+            background-color: darkturquoise;
+            border-radius: 5px;
+            transition: transform 1s ease-in-out;
+             
+        }
+        .transformed1:hover{
+            transform: translate(50px);
+        }
+        .transformed2:hover{
+            transform: translateY(50px);
+        }
+        
+        .transformed3:hover{
+            transform: translate(15px, -40px);
+        }
+        
+        .transformed4:hover{
+            transform: translate(12px, 50px);
+        }
+    </style>
+</head>
+<body>
+   <div class="contanier">
+       <div class="transformed1">transformed1</div>
+       <div class="transformed2">transformed2</div>
+       <div class="transformed3">transformed3</div>
+       <div class="transformed4">transformed4</div>
+   </div>
+</body>
+</html>
