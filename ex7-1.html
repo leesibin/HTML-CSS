@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>햄버거 만들기</title>
+    <style>
+        :root{
+            --body-bg: white;
+        --hamburger-bg: white; 
+        }
+        html,
+        body{
+            height: 100%;
+        }
+        body{
+            background: var(--body-bg);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .hamburger-title{
+            color: crimson;
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        .hamburger-container{
+            display: inline-block;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background: var(--hamburger-bg);
+                 
+        }
+        .hamburger,
+        .hamburger::before,
+        .hamburger::after{
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            background: red;
+            transition: 0.5s;
+        }
+    
+        .hamburger::before,
+        .hamburger::after{
+            content: "";
+        }
+        .hamburger{
+            top: 50%;
+        }
+        .hamburger::before{
+            top: -30px;
+        }
+        .hamburger::after{
+            top: 30px;
+        }
+        .toggle:checked ~.hamburger::after{
+            top: 0;
+            transform: rotate(90deg);
+        }
+        .toggle:checked ~.hamburger::before{
+            top: 0;
+            transform: rotate(180deg);
+        }
+        .toggle:checked ~.hamburger{
+            background: var(--hamburger-bg);
+        }
+        .toggle{
+            opacity: 0;
+        
+            
+        
+    </style>
+</head>
+<body>
+   <span class="hamburger-title">My hamburger</span>
+  <label>
+   <div class="hamburger-container">
+        <input class="toggle" type="checkbox"/>
+        <div class="hamburger"></div>
+    
+    </div>
+    </label>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis doloribus voluptatibus officiis quidem deleniti ullam placeat consequuntur? Voluptates est ullam incidunt. Doloremque unde alias aspernatur laborum, sunt, culpa dolor nostrum magnam nobis deleniti accusantium vero voluptate tenetur ipsum iste, quae est libero maxime. Ipsa nihil officiis dolor tempore ea eos recusandae accusantium voluptates sunt beatae minima, rerum distinctio modi corrupti repellendus, ratione expedita voluptatum, iure aspernatur sint possimus quo animi! Corporis veritatis, officia repudiandae itaque maxime laudantium eius, nobis tenetur accusamus numquam praesentium beatae dignissimos soluta tempore consequuntur ea ullam amet porro a illo! Facere laudantium iste adipisci saepe, quisquam!</p>
+</body>
+</html>
