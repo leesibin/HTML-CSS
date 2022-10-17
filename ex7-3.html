@@ -3,11 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <title>CSS 연습3</title>
+    <link rel="stylesheet" href="style.css" type="text">
     <style>
-    background-color:pink;
+/*    동급선택자는 마지막으로 설정한게 적용    */
+        body{
+            background-color:#ff9eaa;
+            padding-top: 8rem;
+            display: flex;
+            justify-content: center;
+        }
+        .profile{
+            width: 8rem;
+            height: 8rem;
+            background-image: url( img/dumji.png);
+            background-size: 130px;
+            border-radius: 50%;
+    /* 박스에 그림자 효과 만드는 속성*/
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+            transform: translateY(50%) 
+            
+        }
+        .profile:hover{
+            transform: translateY(50%) scale(1.1);
+        }
+        .banner
+        {
+            background-image: url(img/sky.png);
+            display: flex;
+            justify-content: center;
+                
+        }
+        .card{
+            background-color: #fff;
+            max-height: 400px;
+            overflow: hidden;
+            border-radius: 2rem;
+            box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+        }
+        .name{
+            text-align: center;
+            padding-top: 60px;
+        }
+        .follow-btn
+        {
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+        .follow-btn button
+        {
+            font-size: mudium;
+            font-weight: bold;
+            background-color: #ffd01a;
+            border: none;
+            padding: 1rem;
+           outline: none;
+            border-radius: 50px;
+            }
+        .follow-btn button:hover{
+            background-color: #efb10a;
+            transform: scale(1.1);
+        }
+        .desc{
+            padding: 1.5rem;
+        }
+        
     </style>
 </head>
 <body>
+<!--   div.card>div.banner+h2.name{LSB}>.div.follow-btn+div.desc-->
+   <div class="card">
+       <div class="banner">
+           <div class="profile"></div>
+       </div>
+       <h2 class="name">LSB</h2>
+           <div class="div follow-btn">
+               <button>Follow</button>
+           </div>
+           <div class="desc">
+               책을 구매해주셔서 감사합니다. 노력하는 당신에게 축복을(?)그리고 더 나은 여러분이 되시길 기원합니다! 물론 저도...
+           </div>
+       
+   </div>
     
 </body>
 </html>
