@@ -1,53 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>프로필 과제</title>
     <style>
-        body{
-           display:flex;
+        body {
+            display: flex;
             justify-content: center;
             background-color: #e9eaeb;
             padding: 60px;
         }
-        .section{
+
+        .section {
             background-color: #fff;
             width: 400px;
-            height: 500px;
-            border-radius: 20px;
+            height: 600px;
+            border-radius: 10px;
+            overflow: hidden;
+
         }
-        .main{
-           background-color: blue;
+
+        .main {
+            background-color: #fff;
             width: 400px;
             height: 50px;
+            display: flex;
+            justify-content: center;
+
+
         }
-        .profile
-        {
-            
+
+        .profile {
+
             background-image: url(img/cat2.png);
-            width: 100px;
-            height: 100px;
-            font-size: 100px;            
-            border-radius:50%;
+            width: 200px;
+            height: 200px;
+            background-size: 300px;
+            border-radius: 50%;
+            transform: translateY(20%);
+            box-shadow: 5px 5px 10px #78746e;
         }
-       
-           
+
+        .profile:hover {
+            transform: translateY(20%) scale(1.1);
+            transition: 0.5s ease-in;
+        }
+
+        .name {
+            font-size: 30px;
+            text-align: center;
+            padding-top: 200px;
+        }
+
+        .message {
+            padding-bottom: 20px;
+            text-align: center;
+            color: #e9eaeb;
+
+        }
+
+        .view {
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .view button {
+            background-color: gray;
+            border: none;
+            border-radius: 50px;
+            font-size: 15px;
+            padding: 15px;
+            box-shadow: 3px 3px 7px #78746e;
+
+        }
+
+        .view button:hover {
+            background-color: #333;
+            color: #fff;
+            transform: scale(1.05);
+            transition: 0.25s ease-in;
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+
+
+
+
+        .others {
+            display: flex;
+            justify-content: center;
+            ;
+
+        }
+
+        .O1 {
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: 3px 3px 7px #b30505;
+
+        }
+
+        .O2 {
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: 3px 3px 7px #df8600;
+        }
+
+        .O3 {
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: 3px 3px 7px #d3d300;
+        }
+
+        .O4 {
+            background-color: green;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin: 10px;
+            box-shadow: 3px 3px 7px green;
         }
     </style>
 </head>
+
 <body>
     <wrap class="section">
-        <nav class="main"></nav>
-        <article class="profile">
-            <div class="name"></div>
-            <div class="message"></div>
-            <div class="view"></div>
-        </article>
+        <nav class="main">
+
+            <article class="profile"></article>
+
+        </nav>
+
+        <div class="name">
+            <strong>CAT</strong>
+        </div>
+
+        <div class="message">
+            <div> VERYCUTE</div>
+        </div>
+        </div>
+        <div class="view"><button>view mond</button> </div>
+
         <ul class="contact">
-            <li>Visti MY Facebook page</li>
-            <li>banana80@naver.com</li>
+
+            <li class="C1">MY Facebook page</li>
+            <li class="C2">babanana80@naver.com</li>
+
         </ul>
-        <nav class="others"></nav></nav>
+        <nav class="others">
+            <div class="O1"></div>
+            <div class="O2"></div>
+            <div class="O3"></div>
+            <div class="O4"></div>
+        </nav>
+        </nav>
+        </div>
     </wrap>
 </body>
+
 </html>
