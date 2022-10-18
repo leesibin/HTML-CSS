@@ -25,7 +25,7 @@
     right: 25px;
 }
 .best-movie__img-container{
-   padding: 0 20px;
+   padding:20px;
    margin: 20px 0;
    display: flex;
    justify-content: center; 
