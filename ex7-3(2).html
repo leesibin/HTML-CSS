@@ -25,14 +25,24 @@
             background-color: #fff;
             width: 400px;
             height: 50px;
-            display: flex;
-            justify-content: center;
+           
 
 
         }
+        .main::after{
+            background-image: url(img/facebook.png);
+            border: 1px ;
+            background-size: contain;
+            content: '';
+            width: 30px;
+            height: 30px;
+            
+            
+        }
+        .artci
 
         .profile {
-
+            background-position-x: 50%;
             background-image: url(img/cat2.png);
             width: 200px;
             height: 200px;
@@ -40,6 +50,7 @@
             border-radius: 50%;
             transform: translateY(20%);
             box-shadow: 5px 5px 10px #78746e;
+            
         }
 
         .profile:hover {
@@ -50,7 +61,7 @@
         .name {
             font-size: 30px;
             text-align: center;
-            padding-top: 200px;
+            padding-top: 50px;
         }
 
         .message {
@@ -109,6 +120,10 @@
             left: -20px;
            
         }
+        .C2
+        {
+            padding-top: 17px;
+        }
 
         .C2::before {
             background-image: url(img/facebook.png);
@@ -118,9 +133,10 @@
             width: 30px;
             height: 30px;
             position: absolute;
-            top: -3px;
+            top: 15px;
             left: -20px;
-           margin-top: 10px;
+
+           
         }
 
 
@@ -171,12 +187,12 @@
 
 <body>
     <wrap class="section">
-        <nav class="main">
+        <nav class="main"></nav>
+
 
             <article class="profile"></article>
 
-        </nav>
-
+        
         <div class="name">
             <strong>CAT</strong>
         </div>
