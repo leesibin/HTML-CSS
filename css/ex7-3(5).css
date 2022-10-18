@@ -1,18 +1,71 @@
 body{
-    background-color: #e9eaeb;
+    background-color: #9a93af;
     display: flex;
     justify-content: center;
     padding-top: 60px;
    
 }
 .Bg{
-    background-color: #fff;
+    background-color: #cbe5e4;;
     width: 400px;
-    height: 500px;
+    height: 380px;
     overflow: hidden;
     border-radius: 10%;
 }
 .Banner{
-    background-image: url(style.css);
+    background-image: url(../img/banner.png);
     height: 100px;
     width: 400px;
+    display: flex;
+    justify-content: center;
+}
+.Photo{
+    background-image: url(../img/Profil.png);
+    width: 100px;
+    height: 100px;
+    background-size: 100px;
+    border-radius: 50%;
+    transform: translateY(50%);
+    box-shadow: 3px 3px 10px #8d8d68;
+}
+.Photo:hover{
+    transform:translateY(50%) scale(1.1);
+    transition: 1s ease-in;
+}
+.Name
+{
+    text-align: center;
+   padding-top: 10%;
+  
+   
+}
+.View
+{
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.View button{
+    border: none;
+    border-radius: 50px;
+    background-color: yellow;
+    width: 300px;
+    height: 50px;
+    box-shadow: 3px 3px 10px #9f9f46;
+    
+}
+.View button:hover{
+    transform: translateY(10%) scale(1.1);
+    transition: 0.5s ease-in;
+
+}
+
+.Text{
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+        
+  
