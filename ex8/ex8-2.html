@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./css/find.css"rel="stylesheet">
+<style>
+    .material-icons.md-12 { font-size: 18px; }
+    .material-icons.md-24 { font-size: 24px; }
+    .material-icons.md-36 { font-size: 36px; }
+    .material-icons.md-48 { font-size: 48px; }
+    /* 화면 크기에 따라 색변경 */
+    @media(max-width: 1280px){
+        body{background-color: red ;}
+    }
+    @media(max-width: 600px){
+        body{background-color: yellow;}
+    }
+
+</style>
+</head>
+<body>
+    <!-- <span class="material-icons-outlined. md-36">
+        wifi
+        </span> -->
+<!-- form.find-search-bar-form>div>input.find-serach-bar+span.material-icons-outlined{search} -->
+<form class="find-search-bar-form">
+    <div>
+        <input class="find-search-bar" placeholder="검색하기"/>
+        <span class="material-icons-outlined">
+            search
+        </span>
+    </div>
+</form>
+<!-- div.best-movie>div.best-movie__img.cotainer>img.best.movie_img+span.material-icons(play_arrow) -->
+<div class="best-movie">
+    <div class="best-movie__img-container">
+        <img class="best-movie__img" src="../img/movie.png">
+        <span class="material-icons">play_arrow</span>
+    </div>
+    <div class="best-movie__title">
+        <p class="best-moive__promotion-title">지금 가장 흥행하는 작품은?</p>
+        <span class="best-movie__movie-name">승리호</span>
+    </div>
+</div>
+</body>
+</html>
