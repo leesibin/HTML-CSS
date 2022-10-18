@@ -1,0 +1,16 @@
+@import"./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+*{
+    box-sizing: border-box;  /* 모든요소를 화면안에 포함시킴 */
+   
+}
+
+body{
+   background-color: #120522;
+   color: #fff; 
+    font-family: 'Gothic A1', sans-serif;
+}
+    
+*{
+    box-sizing: border-box;
+}
