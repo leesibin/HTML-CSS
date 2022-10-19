@@ -13,10 +13,10 @@
     .material-icons.md-48 { font-size: 48px; }
     /* 화면 크기에 따라 색변경 */
     @media(max-width: 1280px){
-        body{background-color: red ;}
+        body{background-color: purple ;}
     }
     @media(max-width: 600px){
-        body{background-color: blue;}
+        body{background-color: grey;}
     }
 
 </style>
@@ -42,8 +42,23 @@
     </div>
     <div class="best-movie__title">
         <p class="best-moive__promotion-title">지금 가장 흥행하는 작품은?</p>
-        <span class="best-movie__movie-name">승리호</span>
+        <span class="best-movie__movie-name">어벤져스</span>
     </div>
+</div>
+<!-- div.move-recommendation>span.mocie-recommendation_title{다른작품보기}+ul.movie-recommendation_imges>li*3 -->
+<div class="move-recommendation">
+    <span class="mocie-recommendation_title">다른작품보기</span>
+    <ul class="movie-recommendation_imges">
+        <li><img src="../img/movie.png" alt=""></li>
+        <li><img src="../img/movie2.png" alt=""></li>
+        <li><img src="../img/moive3.png" alt=""></li>
+        <li><img src="../img/movie4.png" alt=""> </li>
+    </ul>
+</div>
+<!-- div.navigation-bar>a>span.material-icons-outlined{search}^a>span.material-icons-outlined{person_outline} -->
+<div class="navigation-bar">
+    <a href="find.html"><span class="material-icons-outlined">search</span></a>
+    <a href="mypage.html"><span class="material-icons-outlined">person_outline</span></a>
 </div>
 </body>
 </html>

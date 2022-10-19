@@ -23,8 +23,8 @@
 .find-search-bar-form span{
     position: absolute;
     font :1rem;
-    bottom: 0.55rem;
-    right: 25px;
+    bottom: 0.3rem;
+    right: 30px;
 }
 .best-movie__img-container{
     position: relative;
@@ -56,4 +56,21 @@
     color: var(--purple);
     font-size: 40px;
     font-weight: 600;
+}
+.movie-recommendation{
+    margin: 25px 0;
+    padding: 0 25px;
+}
+.movie-recommendation_imges{
+    margin-top: 15px;
+    list-style: none;
+    display: flex;
+    overflow: scroll;
+}
+.movie-recommendation_imges li{
+    margin: 5px;
+}
+.movie-recommendation_images img{
+    border: 15px;
+    width: 150px;
 }
