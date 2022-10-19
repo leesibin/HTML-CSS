@@ -58,11 +58,11 @@
     border-radius: 20px;
 }
 .wishlist_header{
-    border-top: 1px solid var(--boder--);
+    border-top: 1px solid var(--boder--color);
     padding-top: 15px;
     margin-bottom: 10px;
 }
-.wishlist_item{
+.wishlist-item{
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@
     border-radius: 15px;
 }
 
-.wishlist_info{
+.wishlist-info{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -84,12 +84,12 @@
 .wishlist_subtitle{
     font-size: 0.9rem;
 }
-.wishlist-play-btn- span{
+.wishlist-play-btn span{
     background-color: var(--purple);
-    border: 50%;
+    border-radius: 50%;
     opacity: 0.9;
     font-size: 3rem;
 }
 .wishlist{
-    padding: 20px;
+    padding: 0 20px 10px 20px;
 }
