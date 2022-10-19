@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mypage</title>
+    <link rel="stylesheet" href="./css/my page.css">
 </head>
 <body>
-    
-   
+    <!-- div>div.user-component>img.user-component_profile+div.user-component_id{이시빈}^div.user-component>div.user-component_profile add-profile-btn div.componet_profile>span{+}^div.user-commponet -->
+    <div class="display-flex-center">
+        <div class="user-component position-relative display-flex-center">
+            <img src="../img/youQuiz.png" alt="" class="user-component_profile">
+            <div class="user-component__id">선생님</div>
+        </div>
+        <div class="user-component">
+            <div class="user-component_profile add-profile-btn display-flex-center"><span>+</span></div>
+            <div class="user-component_id">새 프로필</div>
+        </div>
+    </div>
+<!-- div.continue-watching>p.continue-watching__header+ul.continue-watching__imges>li>div.continue-watching__card>img+span.continue-watching__title^^li>div.continue-watching__card>img+span.continue-watching__title -->
+<div class="continue-watching">
+    <p class="continue-watching__header">이어보기</p>
+    <ul class="continue-watching__imges display-flex-center">
+        <li>
+            <div class="continue-watching_card"><img src="../img/moving2.png" alt="">신세계<span class="continue-watching__title"></span></div>
+        </li>
+        <li>
+            <div class="continue-watching_card"><img src="../img/moving1.png" alt="">기생충<span class="continue-watching__title"></span></div>
+        </li>
+    </ul>
+</div>
+<!-- div.wishlist>p.wishlist__header{내가찜한목록}+div.wishlist-container>(div.wishlist-item>div>img.wishlist__img^div.wishlist-info>span.wishlist__title+span.wishlist__subtitle^div.wishlist-pay-btn>span.material-icons{play_arrow})*3 -->
+<div class="wishlist">
+    <p class="wishlist_headar">내가찜한목록</p>
+    <div class="wishlist"></div>
+    <container>
+        <div class="wishlist-item">
+            <div><img src="../img/post.png" alt="" class="wishlist_img"></div>
+            <div class="wishlist-info"><span class="wishlist_title">너의 이름은</span><span class="wishlist_subtitle"></span></div>
+            <div class="wishlist-play-btn"><span class="material-icons">play_arrow</span></div>
+        </div>
+        <div class="wishlist-item">
+            <div><img src="../img/post2.png" alt="" class="wishlist_img"></div>
+            <div class="wishlist-info"><span class="wishlist_title">첫눈이 사라졌다</span><span class="wishlist_subtitle"></span></div>
+            <div class="wishlist-ply-btn"><span class="material-icons">play_arrow</span></div>
+        </div>
+        <div class="wishlist-item">
+            <div><img src="../img/post3.png" alt="" class="wishlist_img"></div>
+            <div class="wishlist-info"><span class="wishlist_title">널기다리며</span><span class="wishlist_subtitle"></span></div>
+            <div class="wishlist-play-btn"><span class="material-icons">play_arrow</span></div>
+        </div>
+    </container>
+</div>
+<div class="navigation-bar">
+    <a href="./ex8-2.html"><span class="material-icons-outlined find-icon-clicked">search</span></a>
+    <a href="./ex8-3.html"><span class="material-icons-outlined">person_outline</span></a>
+</div>
 </body>
 </html>
