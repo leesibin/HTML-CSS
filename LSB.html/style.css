@@ -1,35 +1,44 @@
-header{
+header {
     background-color: gray;
     width: 610px;
     height: 100px;
     border-radius: 15px;
-   display: flex;
-   margin-bottom: 10px;
-   
+    display: flex;
+    margin-bottom: 10px;
+
 }
-.main{
+
+.main {
     display: flex;
 }
-nav{
+
+nav {
     background-color: wheat;
     width: 150px;
     height: 400px;
     border-radius: 15px;
     margin-right: 10px;
-
-   
+    box-sizing: border-box;
+    padding: 30px;
 }
-article{
+
+article {
     text-align: center;
     background-color: beige;
     width: 450px;
     height: 400px;
     border-radius: 15px;
-    display: ;
+    box-sizing: border-box;
 }
 
-    
-footer{
+article table {
+
+    width: 350px;
+    margin: 30px auto 0;
+}
+
+
+footer {
     background-color: grey;
     width: 610px;
     height: 100px;

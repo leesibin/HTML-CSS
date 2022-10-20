@@ -1,24 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인</title>
     <style>
-       span{
-       padding-right: 15px;
-       }
+        span {
+            padding-right: 15px;
+        }
     </style>
 
 </head>
+
 <body>
-    <form action="">
-    <h4 class="login">로그인</h4>
-    <span>아아디</span> <input type="idtext" pattern="[0-9]{3}">
-    <div>패스워드 <input type="password"pattern="[0-9]{3}"></div>
-    <div></div><input type="button" onclick="alert('로그인')" value="로그인" />
-    <input type="button" onclick="alert('회원가입')" value="회원가입" />
-</form>
+    <form action="http://naver.com">
+        <h4 class="login">로그인</h4>
+        <span>아아디</span> <input type="idtext" pattern="[a-zA-Z0-9]{6}" required>
+        <div>패스워드 <input type="password" pattern="[0-9]{3}"></div>
+        <input type="submit" onclick="alert('로그인 되었습니다.')" value="로그인" />
+        <input type="button" onclick="window.open= join.html" )" value="회원가입" />
+    </form>
 </body>
+
 </html>
